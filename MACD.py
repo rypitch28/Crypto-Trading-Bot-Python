@@ -26,7 +26,6 @@ def getminutedata(symbol):
     df = df.astype(float)
     return df
 
-print(getminutedata('DOGEUSDT'))
 def tradingstrat(symbol, qty, open_position = False):
     while True:
         df = getminutedata(symbol)
